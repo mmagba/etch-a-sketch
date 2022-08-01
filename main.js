@@ -55,5 +55,41 @@ black.addEventListener('click', () => {
 
 })
 
+// const shades = document.querySelector('.shades');
+// shades.addEventListener('click', () => {
+//     let divs = document.querySelectorAll('.container>div');
+//     divs.forEach((div) => {
+//         div.addEventListener('mouseover', () => {
+//             div.style.backgroundColor = 'gray';
+
+//         })
+//     })
+
+// })
+
+const eraser = document.querySelector('.eraser');
+eraser.addEventListener('click', () => {
+    let divs = document.querySelectorAll('.container>div');
+    divs.forEach((div) => {
+        div.addEventListener('mouseover', () => {
+            div.style.backgroundColor = ``;
+
+        })
+    })
+
+})
+
+const clean = document.querySelector('.clean');
+clean.addEventListener('click', () => {
+    let divs = document.querySelectorAll('.container>div');
+    divs.forEach((div) => {div.style.backgroundColor='white';})
+
+})
+
+
+
+
+
+
 
 newGrid(size);
